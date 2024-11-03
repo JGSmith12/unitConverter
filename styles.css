@@ -1,0 +1,132 @@
+:root {
+  --primary: #6943ff;
+  --secondary: #5a537b;
+  --accent: #b295ff;
+  --action: #3d3d3d;
+  --text-dark: #353535;
+  --text-light: white;
+  --text-other: #353535;
+  --background-secondary: #f4f4f4;
+  --background-secondary-light: white;
+}
+
+.darkmode {
+  --primary: #6943ff;
+  --secondary: #5a537b;
+  --accent: #b295ff;
+  --action: #3d3d3d;
+  --text-dark: #ccc1ff;
+  --text-light: white;
+  --text-other: white;
+  --background-secondary: #1f2937;
+  --background-secondary-light: #273549;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  background: black;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.section {
+  height: 100%;
+  padding: 4rem 8rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.converter__wrapper {
+  display: grid;
+  height: 72.9rem;
+  background-color: var(--background-secondary);
+}
+
+.converter__header {
+  display: flex;
+  flex-direction: column;
+  width: 51rem;
+  height: 22.5rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+  background-color: var(--primary);
+}
+
+.converter__body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-secondary);
+  width: 51rem;
+  height: 38.5rem;
+  padding: 3rem 2rem;
+  justify-content: space-between;
+}
+.converted__wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-secondary-light);
+  padding: 2rem 0rem;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.converted__wrapper span {
+  color: var(--text-other);
+}
+
+.converter__value-wrapper span {
+  display: block;
+  font-size: 5.8rem;
+  line-height: 1;
+  text-align: center;
+  color: var(--text-light);
+}
+
+.converter__header-heading {
+  color: var(--text-light);
+  font-size: 2.8rem;
+}
+
+button {
+  padding: 1rem 2.75rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  border: none;
+  text-transform: capitalize;
+}
+
+.converter__body-heading {
+  font-size: 2rem;
+  color: var(--text-dark);
+}
+
+.converter__converted {
+  font-size: 1.4rem;
+}
+
+input {
+  background: none;
+  border: 2px solid var(--accent);
+  display: flex;
+  width: 11.7rem;
+  height: 8.3rem;
+  border-radius: 0.5rem;
+  font-size: 5.8rem;
+  color: var(--text-light);
+  font-weight: 800;
+  justify-items: center;
+}
