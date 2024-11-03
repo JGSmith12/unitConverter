@@ -37,6 +37,8 @@ h1 {
 }
 
 .section {
+  display: grid;
+  justify-content: center;
   height: 100%;
   padding: 4rem 8rem;
 }
@@ -44,7 +46,6 @@ h1 {
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 100%;
 }
 
